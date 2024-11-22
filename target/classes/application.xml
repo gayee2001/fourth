@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <!-- bean definitions here -->
+    <bean id="info" class="com.arich.SpringAutowirePro1.model.Employee" autowire="byType">
+    <property name="empid" value="101"></property>
+    <property name="empname" value="Ajay"></property>
+    <property name="basic" value="4567.90"></property>
+    </bean>
+   
+    <bean id="adr" class="com.arich.SpringAutowirePro1.model.Address">
+    <property name="flatno" value="G03"></property>
+    <property name="colony" value="Supertech"></property>
+    <property name="city" value="NOIDA"></property>
+    </bean>
+    </beans>
